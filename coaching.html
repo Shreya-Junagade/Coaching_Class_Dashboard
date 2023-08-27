@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Coaching Class.css</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.center{
+  margin: auto;
+  width: 40% ;
+  
+  
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+       <div class="center">
+        <h1 style="background-color:rgba(233, 145, 110, 0.87);" ><p>Welcome to Vidyalankar </p></h1>
+        <img src="https://www.vidyalankar.org/assets/img/banner.jpg" style="width:80%" onclick="onClick(this)" alt="Dr. Tandon Sangeeta Pradeep Professor">
+        <h2><p>India's One Of The Best Coaching  Classes</p></h2>
+        <button>ENROLL NOW</button>
+       </div>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Faculty<br>Corner</b></h3>
+    
+
+  </div>
+  <div class="w3-bar-block">
+    <a href=" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="Qualifications" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Qualifications</a> 
+    <a href="Programs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Programs</a> 
+    <a href="Research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Research</a> 
+    <a href="#About us" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About us</a> 
+    <a href="contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Coaching class Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  
+  <div class="w3-container" style="margin-top:80px" id="Qualifications">
+    <h1 class="w3-jumbo"><b>Our Faculties</b></h1>
+    
+             <div class="rightNav">
+            <input type="text" name="search faculty" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Qualifications</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+
+
+  <!-- Photo grid (modal) -->
+   <!-- Photo grid (modal) -->
+   <div class="w3-row-padding">
+    <div class="w3-half">
+      
+      <img src="https://www.met.edu/uploadfile/esteemedfaculty/Dr_Sangeeta_Tandon.jpg" style="width:80%" onclick="onClick(this)" alt="Dr. Tandon Sangeeta Pradeep Professor">
+    </div>
+
+    <div class="w3-half">
+      <b><img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="  Dr. Tandon Sangeeta Pradeep Professor "  ></b>
+      <br>
+      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="MA (Indus. Eco), MA (Eco), B Ed, PGD (PM & IR)">
+      <br>
+      <br>
+      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Dr. Sangeeta Tandon is the Deputy Director of MET Institute of Management, affiliated to the University of Mumbai and is also the MMS Course Coordinator for the Masters in Management (MMS) Program. She holds a Ph.D. in Management, has two post-graduate degrees in Economics and also a B. Ed. from University of Mumbai, to her credit">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="Programs" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Programs.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <b><p>Highlights</b><br>
+    
+        <br>
+        Preparatory Module for Non IT Students<br>
+        Live Sessions by Industry and Academic Experts<br>
+        Project Based Learning<br>
+        IHP from TCS iON<br>
+        Placements<br>
+        Cutting Edge Curriculum<br>
+    
+    
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="Research" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Research.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <b><p>The best Coaching Class in the world.</p></b>
+    <p>.Endowed with a gift of good academic career, C. S. Deshpande completed his Inter Science Examination in 1950 from Willingdon College, Sangli with a spectacular performance by standing FIRST in the University, winning all the University prizes and scholarships in all the subjects and creating records in Mathematics and in Aggregate total marks. (The 2nd rank student was behind him by as many as 70 marks i.e. by 10%).
+
+        After completing his B.E. (Electronics and Telecom.) from the College of Engineering, Pune, he joined the prestigious T.I.F.R. (Tata Institute of Fundamental Research) in 1954 as a research scholar in Nuclear Particle Accelerator Section. His name was specially recommended by his principal to Dr. Homi J Bhabha, the noted scientist and the founder of TIFR In the following year, he appeared at the I.E.S. ( Indian Engineering Services) Examination and secured the top rank in this All India Competitive examination. He was posted in the I.R.S.E. (Indian Railway)
+        
+    </p>
+    <p><b>Our Faculty are thoughtfully chosen</b>:</p>
+  </div>
+<br>
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>A Doctorate in Women Entrepreneurship, she is passionate about creativity and innovation. Apart from being an author- social entrepreneur- corporate trainer, she has been Director, Jodhpur Institute of Management, Dean, Faculty of Management, JNU and Director, AIMSR, Mumbai. She was appointed as Chief Incubation Officer at MDI, Gurgaon and currently,</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John  Doe</h3>
+          <p class="w3-opacity">Research</p>
+          <p>She is an author of numerous research papers, journal articles, book chapters, newspaper contributions and working papers. Her current research interests are in the field of Conflict Resolution through Alternate Dispute Resolution (ADR) from a community based perspective. A recipient of various recognitions, </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>She has successfully guided six Doctoral Research projects and more than 150 Master level research projects. She has authored two books for MMS program for University of Mumbai. She has presented and published many research papers at national and international level conferences. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="About Us" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>About Us</b></h1>
+    
+    
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Endowed with a gift of good academic career, C. S. Deshpande completed his Inter Science Examination in 1950 from Willingdon College, Sangli with a spectacular performance by standing FIRST in the University, winning all the University prizes and scholarships in all the subjects and creating records in Mathematics and in Aggregate total marks. (The 2nd rank student was behind him by as many as 70 marks i.e. by 10%).
+
+        After completing his B.E. (Electronics and Telecom.) from the College of Engineering, Pune, he joined the prestigious T.I.F.R. (Tata Institute of Fundamental Research) in 1954 as a research scholar in Nuclear Particle Accelerator Section. His name was specially recommended by his principal to Dr. Homi J Bhabha, the noted scientist and the founder of TIFR In the following year, he appeared at the I.E.S. ( Indian Engineering Services) Examination and secured the top rank in this All India Competitive examination. He was posted in the I.R.S.E. (Indian Railway)
+        </p>
+  </div>
+
+  
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <li class="w3-light-grey w3-padding-24">
+        <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- Contact -->
+<div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to enroll to classes Fill out the form and fill me in with the details  </p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>name</label>
+        <input class="w3-input w3-border" type="text" name="name" required>
+      </div>
+      <div class="w3-section">
+        <label>email</label>
+        <input class="w3-input w3-border" type="text" name="email" required>
+      </div>
+      <div class="w3-section">
+        <label>message</label>
+        <input class="w3-input w3-border" type="text" name="message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+    
+</script>
+
+</body>
+</html>
